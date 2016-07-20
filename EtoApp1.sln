@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtoApp1", "EtoApp1\EtoApp1.csproj", "{3152FECD-0E8A-449E-94DE-D1C1D07BF143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtoApp1.Gtk2", "EtoApp1.Gtk2\EtoApp1.Gtk2.csproj", "{59A96494-3CCC-47CC-8E1F-0DA86FAA55D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtoApp1.Gtk3", "EtoApp1.Gtk3\EtoApp1.Gtk3.csproj", "{42F0394E-FDF8-46B8-AE89-9DFABED4915A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtoApp1.Wpf", "EtoApp1.Wpf\EtoApp1.Wpf.csproj", "{8E578436-E687-4615-9B3F-D31CAE907FF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtoApp1.WinForms", "EtoApp1.WinForms\EtoApp1.WinForms.csproj", "{5D2FFD0B-D082-4637-8096-FB3751A2E366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtoApp1.Mac", "EtoApp1.Mac\EtoApp1.Mac.csproj", "{AD8079D5-E1D6-491B-95C8-DED73461D7FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3152FECD-0E8A-449E-94DE-D1C1D07BF143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3152FECD-0E8A-449E-94DE-D1C1D07BF143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3152FECD-0E8A-449E-94DE-D1C1D07BF143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3152FECD-0E8A-449E-94DE-D1C1D07BF143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A96494-3CCC-47CC-8E1F-0DA86FAA55D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A96494-3CCC-47CC-8E1F-0DA86FAA55D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A96494-3CCC-47CC-8E1F-0DA86FAA55D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A96494-3CCC-47CC-8E1F-0DA86FAA55D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F0394E-FDF8-46B8-AE89-9DFABED4915A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F0394E-FDF8-46B8-AE89-9DFABED4915A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F0394E-FDF8-46B8-AE89-9DFABED4915A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F0394E-FDF8-46B8-AE89-9DFABED4915A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E578436-E687-4615-9B3F-D31CAE907FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E578436-E687-4615-9B3F-D31CAE907FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E578436-E687-4615-9B3F-D31CAE907FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E578436-E687-4615-9B3F-D31CAE907FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2FFD0B-D082-4637-8096-FB3751A2E366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2FFD0B-D082-4637-8096-FB3751A2E366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2FFD0B-D082-4637-8096-FB3751A2E366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2FFD0B-D082-4637-8096-FB3751A2E366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8079D5-E1D6-491B-95C8-DED73461D7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8079D5-E1D6-491B-95C8-DED73461D7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8079D5-E1D6-491B-95C8-DED73461D7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8079D5-E1D6-491B-95C8-DED73461D7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
