@@ -5,9 +5,11 @@ using Eto.Drawing;
 using Eto.Serialization.Xaml;
 
 namespace EtoApp1
-{
+{    
     public class MainForm : Form
     {
+        protected TabControl TabCtrl;
+
         public MainForm()
         {
             XamlReader.Load(this);
@@ -15,7 +17,17 @@ namespace EtoApp1
 
         protected void HandleClickMe(object sender, EventArgs e)
         {
-            MessageBox.Show("I was clicked!");
+            NewTabVM tabvm = new NewTabVM();
+
+            var newPanel = new Newtab();
+            newPanel.DataContext = tabvm;
+
+            TabPage tp = new TabPage();
+            TabCtrl.Pages.Add(tp);
+
+            tp.Content = newPanel;
+            tp.Text = "list tests";
+            TabCtrl.SelectedPage = tp; 
         }
 
         protected void HandleQuit(object sender, EventArgs e)
