@@ -32,7 +32,7 @@ namespace EtoApp1
 
     public class ListVM : INotifyPropertyChanged
     {
-        public bool ThrowSelectedIndexException = false;
+        public bool ThrowSelectedIndexException = true;
         private int _selectedIndex;
         public int SelectedIndex
         {
