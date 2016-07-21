@@ -5,9 +5,7 @@
 	Title="My Eto Form"
 	ClientSize="400, 350"
 	>
-  <StackLayout>
-    <Label>Some Content</Label>
-  </StackLayout>
+  <TabControl x:Name="TabCtrl" />
 
   <Form.Menu>
 		<MenuBar>
