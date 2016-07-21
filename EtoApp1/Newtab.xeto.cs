@@ -32,13 +32,14 @@ namespace EtoApp1
 
     public class ListVM : INotifyPropertyChanged
     {
+        public bool ThrowSelectedIndexException = true;
         private int _selectedIndex;
         public int SelectedIndex
         {
             get { return _selectedIndex; }
             set
             {
-                if (value == -1)
+                if (value == -1 && ThrowSelectedIndexException)
                     throw new Exception("selected index set to -1");
                 else
                 {
