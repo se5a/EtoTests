@@ -24,6 +24,7 @@
 	<Form.ToolBar>
 		<ToolBar>
 			<x:Reference Name="clickCommand"/>
+      <x:Reference Name="clickScrolable"/>
 		</ToolBar>
 	</Form.ToolBar>
 </Form>
