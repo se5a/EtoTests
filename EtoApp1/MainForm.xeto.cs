@@ -19,7 +19,7 @@ namespace EtoApp1
         {
             NewTabVM tabvm = new NewTabVM();
 
-            var newPanel = new ScrollablePannel();
+            var newPanel = new Newtab();
             newPanel.DataContext = tabvm;
 
             TabPage tp = new TabPage();
