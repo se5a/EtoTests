@@ -15,11 +15,11 @@ namespace EtoApp1
             XamlReader.Load(this);
         }
 
-        protected void HandleClickMe(object sender, EventArgs e)
+        protected void HandleDropDownTest(object sender, EventArgs e)
         {
             NewTabVM tabvm = new NewTabVM();
 
-            var newPanel = new Newtab();
+            var newPanel = new ScrollablePannel();
             newPanel.DataContext = tabvm;
 
             TabPage tp = new TabPage();
@@ -29,7 +29,20 @@ namespace EtoApp1
             tp.Text = "list tests";
             TabCtrl.SelectedPage = tp; 
         }
+        protected void HandleScrollableTab(object sender, EventArgs e)
+        {
+            //NewTabVM tabvm = new NewTabVM();
 
+            var newPanel = new ScrollablePannel();
+            //newPanel.DataContext = tabvm;
+
+            TabPage tp = new TabPage();
+            TabCtrl.Pages.Add(tp);
+
+            tp.Content = newPanel;
+            tp.Text = "Scrollable tests";
+            TabCtrl.SelectedPage = tp;
+        }
         protected void HandleQuit(object sender, EventArgs e)
         {
             Application.Instance.Quit();

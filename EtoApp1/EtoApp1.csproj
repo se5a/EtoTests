@@ -29,33 +29,45 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Eto, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Eto.Forms.2.2.0\lib\net45\Eto.dll</HintPath>
+    <Reference Include="Eto, Version=2.2.6072.36452, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Eto.Forms.2.3.0-build0573\lib\net45\Eto.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Eto.Serialization.Xaml, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Eto.Serialization.Xaml.2.2.0\lib\net45\Eto.Serialization.Xaml.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Portable.Xaml, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Portable.Xaml.0.6.1\lib\dotnet\Portable.Xaml.dll</HintPath>
+    <Reference Include="Portable.Xaml, Version=0.14.0.0, Culture=neutral, PublicKeyToken=ba4456acace7dab7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.Xaml.0.14.0\lib\dotnet\Portable.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildStackItem.xeto.cs">
+      <DependentUpon>ChildStackItem.xeto</DependentUpon>
+    </Compile>
     <Compile Include="Newtab.xeto.cs">
       <DependentUpon>Newtab.xeto</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.xeto" />
+    <Compile Include="ScrollablePannel.xeto.cs">
+      <DependentUpon>ScrollablePannel.xeto</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.xeto">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Compile Include="MainForm.xeto.cs">
       <DependentUpon>MainForm.xeto</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Newtab.xeto" />
+    <EmbeddedResource Include="ChildStackItem.xeto">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollablePannel.xeto">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

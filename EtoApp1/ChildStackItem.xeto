@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Panel
+  xmlns="http://schema.picoe.ca/eto.forms" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  >
+  <GroupBox ID="GrpBx" Width="400" Text="Baz">
+    <TableLayout>
+      <TableRow>
+        <Label Text="Foo:" />
+        <TextBox />
+      </TableRow>
+      <TableRow >
+        <Panel Height="120" />
+      </TableRow>
+      <TableRow >
+        <Label Text="Bar: " />
+        <DropDown />
+      </TableRow>
+      <TableRow></TableRow>
+    </TableLayout>
+  </GroupBox>
+</Panel>

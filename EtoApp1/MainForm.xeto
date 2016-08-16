@@ -10,7 +10,8 @@
   <Form.Menu>
 		<MenuBar>
 			<ButtonMenuItem Text="F&amp;ile">
-				<Command x:Name="clickCommand" MenuText="Click Me!" ToolBarText="Click Me!" Executed="HandleClickMe" />
+				<Command x:Name="clickCommand" MenuText="DropDown Selection Test" ToolBarText="DropDown Selection Test" Executed="HandleDropDownTest" />
+        <Command x:Name="clickScrolable" MenuText="Scrollable Test" ToolBarText="Scrollable Test" Executed="HandleScrollableTab" />
 			</ButtonMenuItem>
 			<MenuBar.ApplicationItems>
 				<ButtonMenuItem Text="Preferences.." Shortcut="{On Control+O, Mac=Application+Comma}" />
