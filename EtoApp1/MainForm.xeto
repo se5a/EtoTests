@@ -10,7 +10,8 @@
   <Form.Menu>
 		<MenuBar>
 			<ButtonMenuItem Text="F&amp;ile">
-				<Command x:Name="clickCommand" MenuText="Click Me!" ToolBarText="Click Me!" Executed="HandleClickMe" />
+				<Command x:Name="clickCommand" MenuText="SelectedItem" ToolBarText="SelectedItem" Executed="HandleClickMe" />
+        <Command x:Name="minmaxSliderCMD" MenuText="MinMaxSlider" ToolBarText="MinMaxSlider" Executed="HandleMinMaxSlider" />
 			</ButtonMenuItem>
 			<MenuBar.ApplicationItems>
 				<ButtonMenuItem Text="Preferences.." Shortcut="{On Control+O, Mac=Application+Comma}" />
@@ -23,6 +24,7 @@
 	<Form.ToolBar>
 		<ToolBar>
 			<x:Reference Name="clickCommand"/>
+      <x:Reference Name="minmaxSliderCMD"/>
 		</ToolBar>
 	</Form.ToolBar>
 </Form>

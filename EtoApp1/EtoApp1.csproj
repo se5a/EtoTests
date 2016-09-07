@@ -45,17 +45,25 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MinMaxSliderTab.xeto.cs">
+      <DependentUpon>MinMaxSliderTab.xeto</DependentUpon>
+    </Compile>
     <Compile Include="Newtab.xeto.cs">
       <DependentUpon>Newtab.xeto</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.xeto" />
+    <EmbeddedResource Include="MainForm.xeto">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <Compile Include="MainForm.xeto.cs">
       <DependentUpon>MainForm.xeto</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Newtab.xeto" />
+    <EmbeddedResource Include="MinMaxSliderTab.xeto">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

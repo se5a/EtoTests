@@ -30,6 +30,20 @@ namespace EtoApp1
             TabCtrl.SelectedPage = tp; 
         }
 
+        protected void HandleMinMaxSlider(object sender, EventArgs e)
+        {
+            MinMaxSliderVM tabvm = new MinMaxSliderVM();
+
+            var newPanel = new MinMaxSliderTab() {DataContext = tabvm };
+
+            TabPage tp = new TabPage();
+            TabCtrl.Pages.Add(tp);
+
+            tp.Content = newPanel;
+            tp.Text = "MinMaxSlider Test";
+            TabCtrl.SelectedPage = tp;
+        }
+
         protected void HandleQuit(object sender, EventArgs e)
         {
             Application.Instance.Quit();
