@@ -30,6 +30,21 @@ namespace EtoApp1
             TabCtrl.SelectedPage = tp; 
         }
 
+        protected void HandleDDDict(object sender, EventArgs e)
+        {
+            DropDownDictVM tabvm = new DropDownDictVM();
+
+            var newPanel = new DropDownDict();
+            newPanel.DataContext = tabvm;
+
+            TabPage tp = new TabPage();
+            TabCtrl.Pages.Add(tp);
+
+            tp.Content = newPanel;
+            tp.Text = "DropDownDict test";
+            TabCtrl.SelectedPage = tp;
+        }
+
         protected void HandleQuit(object sender, EventArgs e)
         {
             Application.Instance.Quit();

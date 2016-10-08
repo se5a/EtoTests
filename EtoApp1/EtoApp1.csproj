@@ -45,6 +45,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DictionaryVM.cs" />
+    <Compile Include="DropDownDict.xeto.cs">
+      <DependentUpon>DropDownDict.xeto</DependentUpon>
+    </Compile>
     <Compile Include="Newtab.xeto.cs">
       <DependentUpon>Newtab.xeto</DependentUpon>
     </Compile>
@@ -58,6 +62,7 @@
     <EmbeddedResource Include="Newtab.xeto" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DropDownDict.xeto" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

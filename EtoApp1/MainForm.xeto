@@ -11,6 +11,7 @@
 		<MenuBar>
 			<ButtonMenuItem Text="F&amp;ile">
 				<Command x:Name="clickCommand" MenuText="Click Me!" ToolBarText="Click Me!" Executed="HandleClickMe" />
+        <Command x:Name="dddict" MenuText="dropdownDict" ToolBarText="dropdownDict" Executed="HandleDDDict" />
 			</ButtonMenuItem>
 			<MenuBar.ApplicationItems>
 				<ButtonMenuItem Text="Preferences.." Shortcut="{On Control+O, Mac=Application+Comma}" />

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Panel
+  xmlns="http://schema.picoe.ca/eto.forms" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  >
+  <StackLayout>
+	  <DropDown x:Name="DD" DataContext="{Binding DdVM}"/>
+    <DropDown x:Name="DDObsCol" DataStore="{Binding ObsCol}"/>
+  </StackLayout>
+</Panel>
