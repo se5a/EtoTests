@@ -25,8 +25,8 @@ namespace EtoApp1
             if (DataContext is DropDownDictVM)
             {
                 var vm = (DropDownDictVM)DataContext;
-                //DD.DataContext = vm.DdVM;
-                //DDObsCol.DataStore = vm.ObsCol;
+                DD.DataContext = vm.DdVM;
+                DDObsCol.DataStore = vm.ObsCol;
             }
         }
     }

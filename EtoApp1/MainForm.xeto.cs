@@ -27,7 +27,8 @@ namespace EtoApp1
 
             tp.Content = newPanel;
             tp.Text = "list tests";
-            TabCtrl.SelectedPage = tp; 
+            TabCtrl.SelectedPage = tp;
+            
         }
 
         protected void HandleDDDict(object sender, EventArgs e)
@@ -43,6 +44,7 @@ namespace EtoApp1
             tp.Content = newPanel;
             tp.Text = "DropDownDict test";
             TabCtrl.SelectedPage = tp;
+            
         }
 
         protected void HandleQuit(object sender, EventArgs e)
